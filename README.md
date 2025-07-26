@@ -9,6 +9,7 @@
 ├── data/                 # データファイル格納ディレクトリ
 │   ├── excel/           # Excel/CSVデータ
 │   ├── text/            # テキストデータ
+│   ├── audio/           # 音声書き起こしデータ
 │   └── pdf/             # PDFドキュメント（今後追加予定）
 ├── assets/              # Webサイト用アセット
 │   ├── css/
@@ -40,6 +41,9 @@ ls data/excel/
 
 # テキストデータを確認
 ls data/text/
+
+# 音声書き起こしデータを確認
+ls data/audio/
 ```
 
 ## 📊 利用可能なデータ
@@ -140,6 +144,47 @@ ls data/text/
   - 議事録自動作成
   - キーワード抽出
 
+### 5. 音声データ（議事録練習用）
+
+#### 音声書き起こしデータ (`meeting_audio_transcript_*.txt`)
+- **内容**: 3種類の会議の音声書き起こし（話し言葉）
+  - 営業会議（売上進捗と戦略議論）
+  - 製品開発ブレインストーミング（新商品アイデア出し）
+  - プロジェクト進捗報告会（システム改修進捗）
+- **特徴**: 実際の話し言葉を再現（言い淀み、相槌、雑談含む）
+- **用途**:
+  - 議事録作成練習
+  - 音声認識結果の整形
+  - 会話データの分析
+  - 要約・整理スキルの向上
+
+### 6. データ整形練習用データ
+
+#### 汚いCSVファイル（整形練習用）
+- **営業レポート** (`messy_sales_report.csv`)
+  - 不統一な数値フォーマット（¥記号、カンマ、単位混在）
+  - 途中に集計行挿入
+  - 異なる日付形式
+  - 不要なヘッダー・フッター
+
+- **従業員データ** (`messy_employee_data.csv`)
+  - 重複データ（スペース違い）
+  - 欠損値
+  - 年齢・給与の表記ゆれ
+  - 電話番号・メールアドレスの形式バラバラ
+
+- **在庫データ** (`messy_inventory_warehouse_a.csv`, `messy_inventory_warehouse_b.csv`)
+  - 商品コードの不統一
+  - 数量の単位混在
+  - 空行挿入
+  - 複数ファイルに分散
+
+- **用途**:
+  - データクレンジング練習
+  - pandas/Excel操作技術向上
+  - データ前処理スキル習得
+  - ETL処理の学習
+
 ## 💡 活用例
 
 ### ChatGPT/Claudeでの使用例
@@ -157,6 +202,16 @@ ls data/text/
 3. **テキスト要約**
    ```
    「meeting_transcript_1.txtの内容を3行で要約してください」
+   ```
+
+4. **議事録作成**
+   ```
+   「meeting_audio_transcript_1.txtから正式な議事録を作成してください」
+   ```
+
+5. **データクレンジング**
+   ```
+   「messy_employee_data.csvの重複と欠損値を処理してください」
    ```
 
 ### Pythonでの使用例
@@ -238,6 +293,12 @@ venv\Scripts\activate  # Windows
 
 # データ生成
 python generate_dummy_data.py
+
+# スーパーマーケットデータを生成
+python generate_supermarket_data.py
+
+# 汚いデータを生成（データ整形練習用）
+python generate_messy_excel_data.py
 
 # R分析用データと気象データを生成
 python generate_r_analysis_data.py
