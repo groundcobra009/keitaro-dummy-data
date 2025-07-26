@@ -31,3 +31,12 @@ ENV/
 # Private data
 *.private
 private/
+
+# Project specific
+context.md
+CLAUDE.md
+requirements.md
+repository_info.md
+.specstory/
+generate_supermarket_data.py
+data/excel/photo/
