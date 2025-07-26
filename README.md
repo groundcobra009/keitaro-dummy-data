@@ -158,7 +158,37 @@ ls data/audio/
   - 会話データの分析
   - 要約・整理スキルの向上
 
-### 6. データ整形練習用データ
+### 6. PDFデータ（変換練習用）
+
+#### ビジネスレポートPDF
+- **売上レポート** (`sales_report_2024.pdf`)
+  - 四半期売上データを含む2ページのレポート
+  - 表形式データ：地域別売上、サマリー情報
+  - PDF→CSV変換練習に最適
+
+- **従業員名簿** (`employee_list.pdf`)
+  - 50名の従業員情報（社員番号、氏名、部署、役職等）
+  - 構造化された表データ
+  - 人事データ処理の練習用
+
+- **財務諸表** (`financial_statement.pdf`)
+  - 損益計算書と貸借対照表
+  - 会計数値データの抽出練習
+  - 財務分析用データ変換
+
+- **アンケート結果** (`survey_results.pdf`)
+  - 顧客満足度調査結果
+  - パーセンテージと統計データ
+  - 調査データの構造化練習
+
+- **用途**:
+  - PDF→CSV変換技術の習得
+  - テキスト抽出とデータ構造化
+  - pypdfやpdfplumberの使用練習
+  - OCR処理の学習
+  - レポート自動化スキル向上
+
+### 7. データ整形練習用データ
 
 #### 汚いCSVファイル（整形練習用）
 - **営業レポート** (`messy_sales_report.csv`)
@@ -214,6 +244,11 @@ ls data/audio/
    「messy_employee_data.csvの重複と欠損値を処理してください」
    ```
 
+6. **PDF変換**
+   ```
+   「sales_report_2024.pdfから売上データを抽出してCSVに変換してください」
+   ```
+
 ### Pythonでの使用例
 
 ```python
@@ -228,6 +263,20 @@ print(df_scores.describe())
 # クラス別平均点
 class_avg = df_scores.groupby('クラス')['平均'].mean()
 print(class_avg)
+
+# PDFからデータを抽出（pdfplumber使用例）
+import pdfplumber
+
+# PDFファイルを開いてテーブルを抽出
+with pdfplumber.open('data/pdf/sales_report_2024.pdf') as pdf:
+    # 最初のページからテーブルを取得
+    first_page = pdf.pages[0]
+    tables = first_page.extract_tables()
+    
+    # テーブルをDataFrameに変換
+    if tables:
+        df_sales = pd.DataFrame(tables[0][1:], columns=tables[0][0])
+        print(df_sales)
 ```
 
 ### Rでの使用例
@@ -273,6 +322,22 @@ plot(diamonds$カラット, diamonds$価格,
 # 線形回帰モデル
 model <- lm(価格 ~ カラット + as.factor(カット), data = diamonds)
 summary(model)
+
+# PDFからデータを抽出（pdftools使用例）
+library(pdftools)
+library(tabulizer)
+
+# PDFからテーブルを抽出
+pdf_file <- "data/pdf/financial_statement.pdf"
+tables <- extract_tables(pdf_file)
+
+# 最初のテーブルをデータフレームに変換
+if(length(tables) > 0) {
+  financial_data <- as.data.frame(tables[[1]])
+  colnames(financial_data) <- financial_data[1,]
+  financial_data <- financial_data[-1,]
+  print(financial_data)
+}
 ```
 
 ### Excelでの使用例
@@ -302,6 +367,9 @@ python generate_messy_excel_data.py
 
 # R分析用データと気象データを生成
 python generate_r_analysis_data.py
+
+# PDF練習用データを生成
+python generate_pdf_data.py
 ```
 
 ## 📝 注意事項

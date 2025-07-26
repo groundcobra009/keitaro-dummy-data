@@ -208,5 +208,85 @@
     "created_date": "2025-07-26",
     "download_count": 0,
     "file_path": "data/excel/weather_data_2023.xlsx"
+  },
+  {
+    "id": "sales-report-pdf",
+    "title": "売上レポートPDF",
+    "category": "pdf",
+    "description": "2024年度四半期売上報告書。表とグラフを含む構造化されたビジネスレポート。",
+    "content_type": "ビジネスレポート",
+    "pages": 2,
+    "tables": 2,
+    "file_format": "pdf",
+    "file_size": "85KB",
+    "tags": [
+      "PDF変換",
+      "売上分析",
+      "ビジネス",
+      "表データ"
+    ],
+    "created_date": "2025-07-26",
+    "download_count": 0,
+    "file_path": "data/pdf/sales_report_2024.pdf"
+  },
+  {
+    "id": "employee-list-pdf",
+    "title": "従業員名簿PDF",
+    "category": "pdf",
+    "description": "50名の従業員情報を含む名簿。社員番号、氏名、部署、役職等の構造化データ。",
+    "content_type": "人事データ",
+    "pages": 2,
+    "tables": 1,
+    "file_format": "pdf",
+    "file_size": "45KB",
+    "tags": [
+      "PDF変換",
+      "人事",
+      "名簿",
+      "構造化データ"
+    ],
+    "created_date": "2025-07-26",
+    "download_count": 0,
+    "file_path": "data/pdf/employee_list.pdf"
+  },
+  {
+    "id": "financial-statement-pdf",
+    "title": "財務諸表PDF",
+    "category": "pdf",
+    "description": "損益計算書と貸借対照表を含む財務諸表。会計数値の構造化データ。",
+    "content_type": "財務データ",
+    "pages": 2,
+    "tables": 2,
+    "file_format": "pdf",
+    "file_size": "72KB",
+    "tags": [
+      "PDF変換",
+      "財務",
+      "会計",
+      "数値データ"
+    ],
+    "created_date": "2025-07-26",
+    "download_count": 0,
+    "file_path": "data/pdf/financial_statement.pdf"
+  },
+  {
+    "id": "survey-results-pdf",
+    "title": "アンケート結果PDF",
+    "category": "pdf",
+    "description": "顧客満足度調査結果レポート。パーセンテージと統計データを含む。",
+    "content_type": "調査レポート",
+    "pages": 1,
+    "tables": 3,
+    "file_format": "pdf",
+    "file_size": "92KB",
+    "tags": [
+      "PDF変換",
+      "アンケート",
+      "統計",
+      "満足度調査"
+    ],
+    "created_date": "2025-07-26",
+    "download_count": 0,
+    "file_path": "data/pdf/survey_results.pdf"
   }
 ]
