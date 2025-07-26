@@ -1,0 +1,86 @@
+[
+  {
+    "id": "student-scores-2024",
+    "title": "生徒5教科の試験データ",
+    "category": "excel",
+    "description": "1,000件×12ヶ月分の学生成績データ。各生徒の国語、数学、英語、理科、社会の成績を記録。",
+    "columns": [
+      "生徒ID",
+      "生徒名",
+      "性別",
+      "クラス",
+      "年月",
+      "国語",
+      "数学",
+      "英語",
+      "理科",
+      "社会",
+      "合計",
+      "平均"
+    ],
+    "row_count": 12000,
+    "file_format": "xlsx, csv",
+    "file_size": "2.1MB",
+    "tags": [
+      "教育",
+      "成績",
+      "統計",
+      "学生データ"
+    ],
+    "created_date": "2024-01-26",
+    "download_count": 0,
+    "file_path": "data/excel/student_scores.xlsx"
+  },
+  {
+    "id": "sales-data-2024",
+    "title": "商品購入データ",
+    "category": "excel",
+    "description": "2024年の商品購入履歴データ。電子機器、周辺機器、記憶媒体の売上を記録。",
+    "columns": [
+      "注文ID",
+      "注文日",
+      "顧客ID",
+      "商品ID",
+      "商品名",
+      "カテゴリ",
+      "単価",
+      "数量",
+      "小計",
+      "割引率",
+      "割引額",
+      "売上金額",
+      "地域",
+      "支払方法"
+    ],
+    "row_count": 5000,
+    "file_format": "xlsx, csv",
+    "file_size": "1.2MB",
+    "tags": [
+      "ビジネス",
+      "売上",
+      "商品",
+      "購買分析"
+    ],
+    "created_date": "2024-01-26",
+    "download_count": 0,
+    "file_path": "data/excel/sales_data.xlsx"
+  },
+  {
+    "id": "meeting-transcripts-2024",
+    "title": "会議文字起こしデータ",
+    "category": "text",
+    "description": "プロジェクト会議、企画会議、売上報告会議の文字起こしデータ。",
+    "file_count": 3,
+    "file_format": "txt",
+    "file_size": "24KB",
+    "tags": [
+      "テキスト",
+      "会議",
+      "議事録",
+      "文字起こし"
+    ],
+    "created_date": "2024-01-26",
+    "download_count": 0,
+    "file_path": "data/text/"
+  }
+]
