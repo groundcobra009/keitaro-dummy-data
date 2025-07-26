@@ -85,7 +85,49 @@ ls data/text/
   - 在庫管理の最適化
   - 粗利率分析
 
-### 3. テキストデータ
+### 3. R分析専用データセット
+
+#### 植物測定データ (`plant_measurements.xlsx`, `plant_measurements.csv`)
+- **内容**: Rのirisデータセットに似た植物の花弁・がく片測定データ
+- **列**: がく片長、がく片幅、花弁長、花弁幅、品種、採取地、採取日
+- **レコード数**: 150件（3品種×50サンプル）
+- **用途**:
+  - 分類分析の練習
+  - クラスター分析
+  - 主成分分析（PCA）
+  - 判別分析
+
+#### 経済指標データ (`economics_data.xlsx`, `economics_data.csv`)
+- **内容**: 2020-2024年の日本経済指標月次データ
+- **列**: 年月日、年、月、人口、失業率、GDP指数、消費者物価指数、株価指数、為替レート
+- **レコード数**: 60件
+- **用途**:
+  - 時系列分析
+  - 経済予測モデル
+  - 相関分析
+  - 回帰分析
+
+#### ダイヤモンド品質データ (`diamonds_data.xlsx`, `diamonds_data.csv`)
+- **内容**: 2,000個のダイヤモンドの品質・価格データ
+- **列**: カラット、カット、色、透明度、奥行き、テーブル、価格、長さ、幅、深さ、鑑定書、産地
+- **レコード数**: 2,000件
+- **用途**:
+  - 価格予測モデル
+  - 多重回帰分析
+  - 品質要因分析
+  - データ可視化
+
+#### 2023年東京気象データ (`weather_data_2023.xlsx`, `weather_data_2023.csv`)
+- **内容**: 2023年1年間の東京の日別気象データ
+- **列**: 日付、年、月、日、曜日、平均気温、最高気温、最低気温、湿度、降水量、気圧、風速、日照時間、観測地点、天気
+- **レコード数**: 365件
+- **用途**:
+  - 季節性分析
+  - 気温予測モデル
+  - 時系列パターン分析
+  - 環境データ分析
+
+### 4. テキストデータ
 
 #### 会議文字起こしデータ (`meeting_transcript_*.txt`)
 - **内容**: 3種類の会議の文字起こし
@@ -133,6 +175,51 @@ class_avg = df_scores.groupby('クラス')['平均'].mean()
 print(class_avg)
 ```
 
+### Rでの使用例
+
+```r
+# 植物測定データの読み込み（iris風データ）
+plant_data <- read.csv('data/excel/plant_measurements.csv', fileEncoding = 'UTF-8')
+
+# 基本統計量
+summary(plant_data[,1:4])
+
+# 散布図行列
+pairs(plant_data[,1:4], col = plant_data$品種)
+
+# 主成分分析
+pca_result <- prcomp(plant_data[,1:4], scale = TRUE)
+biplot(pca_result)
+
+# 経済データの時系列分析
+economics <- read.csv('data/excel/economics_data.csv', fileEncoding = 'UTF-8')
+economics$年月日 <- as.Date(economics$年月日)
+
+# GDP指数の時系列プロット
+plot(economics$年月日, economics$GDP指数, type = 'l', 
+     main = 'GDP指数の推移', xlab = '年月', ylab = 'GDP指数')
+
+# 気象データの季節性分析
+weather <- read.csv('data/excel/weather_data_2023.csv', fileEncoding = 'UTF-8')
+weather$日付 <- as.Date(weather$日付)
+
+# 月別平均気温
+monthly_temp <- aggregate(平均気温 ~ 月, data = weather, FUN = mean)
+barplot(monthly_temp$平均気温, names.arg = monthly_temp$月,
+        main = '月別平均気温', xlab = '月', ylab = '気温（℃）')
+
+# ダイヤモンドデータの価格予測
+diamonds <- read.csv('data/excel/diamonds_data.csv', fileEncoding = 'UTF-8')
+
+# 価格とカラットの関係
+plot(diamonds$カラット, diamonds$価格, 
+     main = 'カラットと価格の関係', xlab = 'カラット', ylab = '価格')
+
+# 線形回帰モデル
+model <- lm(価格 ~ カラット + as.factor(カット), data = diamonds)
+summary(model)
+```
+
 ### Excelでの使用例
 
 1. `student_scores.xlsx`を開く
@@ -151,6 +238,9 @@ venv\Scripts\activate  # Windows
 
 # データ生成
 python generate_dummy_data.py
+
+# R分析用データと気象データを生成
+python generate_r_analysis_data.py
 ```
 
 ## 📝 注意事項
