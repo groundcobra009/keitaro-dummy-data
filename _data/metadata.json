@@ -288,5 +288,40 @@
     "created_date": "2025-07-26",
     "download_count": 0,
     "file_path": "data/pdf/survey_results.pdf"
+  },
+  {
+    "id": "excel-functions-exercises",
+    "title": "Excel関数練習問題集",
+    "category": "excel",
+    "description": "Excel関数の実践的な使い方を学べる総合練習問題集。文字列操作、VLOOKUP、日付計算、統計関数など10問の練習問題。",
+    "sheets": [
+      "問題一覧",
+      "顧客データ（文字列関数）",
+      "商品マスタ（VLOOKUP用）",
+      "売上データ（VLOOKUP練習）", 
+      "従業員データ（日付・条件分岐）",
+      "試験結果（統計・条件付き書式）"
+    ],
+    "exercise_count": 10,
+    "difficulty_levels": ["初級", "中級", "上級"],
+    "functions_covered": [
+      "RIGHT", "FIND", "LEN", "LEFT", "SUBSTITUTE",
+      "VLOOKUP", "DATEDIF", "TODAY", "IF",
+      "AVERAGE", "MAX", "MIN", "STDEV"
+    ],
+    "file_format": "xlsx",
+    "file_size": "180KB",
+    "tags": [
+      "Excel関数",
+      "練習問題",
+      "文字列操作",
+      "VLOOKUP",
+      "日付計算",
+      "統計関数",
+      "条件付き書式"
+    ],
+    "created_date": "2025-07-26",
+    "download_count": 0,
+    "file_path": "data/excel/excel_functions_exercises.xlsx"
   }
 ]
