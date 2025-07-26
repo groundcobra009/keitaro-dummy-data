@@ -1,6 +1,6 @@
-# AI研修用ダミーデータリポジトリ
+# 🤖 AI研修用ダミーデータリポジトリ
 
-このリポジトリは、AI研修やAI学習に必要な各種ダミーデータを提供しています。著作権やプライバシーに配慮した安全なデータを使用して、様々なAI技術を学習できます。
+このリポジトリは、AI研修やAI学習に必要な各種ダミーデータを提供しています。著作権やプライバシーに配慮した安全なデータを使用して、様々なAI技術を学習できます。✨
 
 ## 📁 ディレクトリ構造
 
@@ -52,19 +52,19 @@ ls data/audio/
 
 | ファイル名 | 日本語説明 | レコード数 | 主な用途 |
 |-----------|-----------|---------|---------|
-| `student_scores.xlsx/.csv` | 学生成績データ | 12,000件 | 教育データ分析、成績予測 |
-| `sales_data.xlsx/.csv` | 商品購入データ | 5,000件 | 売上分析、顧客分析 |
-| `supermarket_sales_data.csv` | スーパー売上詳細 | 468,961件 | BIダッシュボード、時系列分析 |
-| `supermarket_monthly_summary.csv` | スーパー月次集計 | 720件 | 月次レポート、トレンド分析 |
-| `plant_measurements.xlsx/.csv` | 植物測定データ（iris風） | 150件 | R分析、分類・クラスター分析 |
-| `economics_data.xlsx/.csv` | 経済指標データ | 60件 | 時系列分析、経済予測 |
-| `diamonds_data.xlsx/.csv` | ダイヤモンド品質データ | 2,000件 | 価格予測、回帰分析 |
-| `weather_data_2023.xlsx/.csv` | 2023年東京気象データ | 365件 | 季節性分析、環境データ分析 |
-| `excel_functions_exercises.xlsx` | Excel関数練習問題 | 複数シート | Excel関数学習、業務効率化 |
-| `messy_sales_report.csv` | 汚い営業レポート | - | データクレンジング練習 |
-| `messy_employee_data.csv` | 汚い従業員データ | - | データ前処理練習 |
-| `messy_inventory_warehouse_a.csv` | 汚い在庫データA | - | ETL処理練習 |
-| `messy_inventory_warehouse_b.csv` | 汚い在庫データB | - | データ統合練習 |
+| `student_scores.xlsx/.csv` | 🎓 学生成績データ | 12,000件 | 教育データ分析、成績予測 |
+| `sales_data.xlsx/.csv` | 🛒 商品購入データ | 5,000件 | 売上分析、顧客分析 |
+| `supermarket_sales_data.csv` | 🏪 スーパー売上詳細 | 468,961件 | BIダッシュボード、時系列分析 |
+| `supermarket_monthly_summary.csv` | 📊 スーパー月次集計 | 720件 | 月次レポート、トレンド分析 |
+| `plant_measurements.xlsx/.csv` | 🌸 植物測定データ（iris風） | 150件 | R分析、分類・クラスター分析 |
+| `economics_data.xlsx/.csv` | 📈 経済指標データ | 60件 | 時系列分析、経済予測 |
+| `diamonds_data.xlsx/.csv` | 💎 ダイヤモンド品質データ | 2,000件 | 価格予測、回帰分析 |
+| `weather_data_2023.xlsx/.csv` | 🌤️ 2023年東京気象データ | 365件 | 季節性分析、環境データ分析 |
+| `excel_functions_exercises.xlsx` | 📝 Excel関数練習問題 | 複数シート | Excel関数学習、業務効率化 |
+| `messy_sales_report.csv` | 🔧 汚い営業レポート | - | データクレンジング練習 |
+| `messy_employee_data.csv` | 🔧 汚い従業員データ | - | データ前処理練習 |
+| `messy_inventory_warehouse_a.csv` | 🔧 汚い在庫データA | - | ETL処理練習 |
+| `messy_inventory_warehouse_b.csv` | 🔧 汚い在庫データB | - | データ統合練習 |
 
 ### PDFデータ（`data/pdf/`）
 
