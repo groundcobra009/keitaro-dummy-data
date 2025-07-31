@@ -70,61 +70,61 @@ ls data/audio/
 
 | ファイル名 | 日本語説明 | ページ数 | 主な用途 |
 |-----------|-----------|---------|---------|
-| `sales_report_2024.pdf` | 2024年度売上レポート | 2ページ | PDF→CSV変換練習 |
-| `employee_list.pdf` | 従業員名簿 | 2ページ | 人事データ抽出練習 |
-| `financial_statement.pdf` | 財務諸表 | 2ページ | 会計データ変換練習 |
-| `survey_results.pdf` | 顧客満足度調査結果 | 1ページ | 調査データ構造化練習 |
+| `sales_report_2024.pdf` | 📄 2024年度売上レポート | 2ページ | PDF→CSV変換練習 |
+| `employee_list.pdf` | 👥 従業員名簿 | 2ページ | 人事データ抽出練習 |
+| `financial_statement.pdf` | 💰 財務諸表 | 2ページ | 会計データ変換練習 |
+| `survey_results.pdf` | 📝 顧客満足度調査結果 | 1ページ | 調査データ構造化練習 |
 
 ### テキストデータ（`data/text/`）
 
 | ファイル名 | 日本語説明 | 内容 | 主な用途 |
 |-----------|-----------|------|---------|
-| `meeting_transcript_1.txt` | プロジェクト会議議事録 | 正式な文書 | 自然言語処理、要約生成 |
-| `meeting_transcript_2.txt` | 企画会議議事録 | 正式な文書 | テキスト分析、キーワード抽出 |
-| `meeting_transcript_3.txt` | 売上報告会議議事録 | 正式な文書 | 議事録自動作成練習 |
-| `word_wildcard_practice.txt` | Word ワイルドカード練習問題 | 15問の練習問題 | Word検索置換技術習得 |
-| `word_wildcard_guide.md` | ワイルドカード使い方ガイド | 完全ガイド | 正規表現・パターンマッチング学習 |
-| `dictionary_words_recommendation.txt` | 辞書登録推奨単語リスト | 業界別専門用語 | 作業効率化、IME辞書管理 |
+| `meeting_transcript_1.txt` | 📋 プロジェクト会議議事録 | 正式な文書 | 自然言語処理、要約生成 |
+| `meeting_transcript_2.txt` | 📋 企画会議議事録 | 正式な文書 | テキスト分析、キーワード抽出 |
+| `meeting_transcript_3.txt` | 📋 売上報告会議議事録 | 正式な文書 | 議事録自動作成練習 |
+| `word_wildcard_practice.txt` | 🔍 Word ワイルドカード練習問題 | 15問の練習問題 | Word検索置換技術習得 |
+| `word_wildcard_guide.md` | 📖 ワイルドカード使い方ガイド | 完全ガイド | 正規表現・パターンマッチング学習 |
+| `dictionary_words_recommendation.txt` | 📚 辞書登録推奨単語リスト | 業界別専門用語 | 作業効率化、IME辞書管理 |
 
 ### 音声データ（`data/audio/`）
 
 | ファイル名 | 日本語説明 | 内容 | 主な用途 |
 |-----------|-----------|------|---------|
-| `meeting_audio_transcript_1.txt` | 営業会議音声書き起こし | 話し言葉・雑談含む | 議事録作成練習 |
-| `meeting_audio_transcript_2.txt` | 開発会議音声書き起こし | 話し言葉・雑談含む | 音声認識結果整形 |
-| `meeting_audio_transcript_3.txt` | 進捗会議音声書き起こし | 話し言葉・雑談含む | 会話データ分析 |
+| `meeting_audio_transcript_1.txt` | 🎤 営業会議音声書き起こし | 話し言葉・雑談含む | 議事録作成練習 |
+| `meeting_audio_transcript_2.txt` | 🎤 開発会議音声書き起こし | 話し言葉・雑談含む | 音声認識結果整形 |
+| `meeting_audio_transcript_3.txt` | 🎤 進捗会議音声書き起こし | 話し言葉・雑談含む | 会話データ分析 |
 
 ## 🎯 学習目的別ファイル選択ガイド
 
-### データ分析初心者
+### 📊 データ分析初心者
 | 目的 | 推奨ファイル | 理由 |
 |------|-------------|------|
-| **Excel基本操作** | `student_scores.xlsx` | 構造が分かりやすく、ピボットテーブル練習に最適 |
-| **グラフ作成** | `weather_data_2023.csv` | 時系列データで季節性が見える |
-| **関数練習** | `excel_functions_exercises.xlsx` | 段階的な関数学習ができる |
+| **📈 Excel基本操作** | `student_scores.xlsx` | 構造が分かりやすく、ピボットテーブル練習に最適 |
+| **📊 グラフ作成** | `weather_data_2023.csv` | 時系列データで季節性が見える |
+| **📝 関数練習** | `excel_functions_exercises.xlsx` | 段階的な関数学習ができる |
 
-### データサイエンス学習
+### 🔬 データサイエンス学習
 | 目的 | 推奨ファイル | 理由 |
 |------|-------------|------|
-| **Python pandas入門** | `sales_data.csv` | 適度なサイズで多様な分析が可能 |
-| **R統計解析** | `plant_measurements.csv` | iris風データで分類分析の定番 |
-| **時系列分析** | `economics_data.csv` | トレンドと季節性を持つ経済データ |
-| **機械学習** | `diamonds_data.csv` | 回帰・分類問題に適したサイズと特徴量 |
+| **🐍 Python pandas入門** | `sales_data.csv` | 適度なサイズで多様な分析が可能 |
+| **📊 R統計解析** | `plant_measurements.csv` | iris風データで分類分析の定番 |
+| **📈 時系列分析** | `economics_data.csv` | トレンドと季節性を持つ経済データ |
+| **🤖 機械学習** | `diamonds_data.csv` | 回帰・分類問題に適したサイズと特徴量 |
 
-### 業務効率化・自動化
+### ⚡ 業務効率化・自動化
 | 目的 | 推奨ファイル | 理由 |
 |------|-------------|------|
-| **データクレンジング** | `messy_*.csv`シリーズ | 実務でよくある汚いデータパターン |
-| **PDF処理** | `*.pdf`シリーズ | 表形式データの抽出練習 |
-| **Word自動化** | `word_wildcard_*.txt` | 文書整形の効率化技術 |
-| **大量データ処理** | `supermarket_sales_data.csv` | 46万件の大容量データ |
+| **🔧 データクレンジング** | `messy_*.csv`シリーズ | 実務でよくある汚いデータパターン |
+| **📄 PDF処理** | `*.pdf`シリーズ | 表形式データの抽出練習 |
+| **📝 Word自動化** | `word_wildcard_*.txt` | 文書整形の効率化技術 |
+| **💾 大量データ処理** | `supermarket_sales_data.csv` | 46万件の大容量データ |
 
-### AI・自然言語処理
+### 🤖 AI・自然言語処理
 | 目的 | 推奨ファイル | 理由 |
 |------|-------------|------|
-| **文書要約** | `meeting_transcript_*.txt` | 正式な議事録形式 |
-| **音声認識後処理** | `meeting_audio_transcript_*.txt` | 話し言葉の整形練習 |
-| **テキスト分析** | 全テキストファイル | 多様な文書形式で包括的学習 |
+| **📝 文書要約** | `meeting_transcript_*.txt` | 正式な議事録形式 |
+| **🎤 音声認識後処理** | `meeting_audio_transcript_*.txt` | 話し言葉の整形練習 |
+| **🔍 テキスト分析** | 全テキストファイル | 多様な文書形式で包括的学習 |
 
 ## 📊 利用可能なデータ
 
